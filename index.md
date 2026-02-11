@@ -7,8 +7,6 @@ title: Ann Raiho, Ph.D.
 
 I provide independent quantitative evaluation of environmental and carbon systems. My work sits at the intersection of ecological modeling, remote sensing, uncertainty analysis, and operational data systems.
 
-I work with organizations that need rigorous technical judgment, clear analysis, and execution that stands up to scrutiny — from field design through model implementation and reporting.
-
 ---
 
 ## Focus Areas
