@@ -6,40 +6,92 @@
 
 <title>Ann Raiho, Ph.D.</title>
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
+  :root {
+    --tan: #F2E9DD;
+    --pink: #D63384;
+    --green: #1F3D2B;
+  }
+
   body {
-    background-color: #F2E9DD; /* soft tan */
-    color: #D63384; /* muted pink */
+    background-color: var(--tan);
+    color: var(--pink);
     font-family: 'Space Mono', monospace;
-    max-width: 720px;
-    margin: 80px auto;
+    max-width: 760px;
+    margin: 0 auto;
     line-height: 1.7;
-    padding: 0 20px;
+    padding: 0 20px 80px 20px;
+  }
+
+  /* HERO SECTION WITH FOREST BACKGROUND */
+  .hero {
+    position: relative;
+    padding: 120px 0 80px 0;
+    margin-bottom: 40px;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120vw;
+    height: 100%;
+    background-image: url("ggi.png");
+    background-size: cover;
+    background-position: center top;
+    opacity: 1;
+    filter: grayscale(100%) contrast(110%) sepia(20%) hue-rotate(60deg);
+    z-index: -2;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120vw;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(242,233,221,0.4), var(--tan) 100%);
+    z-index: -1;
+  }
+
+  h1, h2 {
+    font-family: 'Inter', sans-serif;
+    color: var(--green);
   }
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 700;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.3em;
     letter-spacing: -1px;
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 20px;
-    opacity: 0.8;
   }
 
   .subtle {
     font-size: 0.9rem;
-    opacity: 0.7;
-    margin-bottom: 40px;
+    opacity: 0.75;
+    margin-bottom: 30px;
+    color: var(--green);
+  }
+
+  .signal {
+    height: 4px;
+    width: 60px;
+    background: var(--pink);
+    margin: 30px 0;
   }
 
   p {
@@ -47,106 +99,107 @@
   }
 
   ul {
-    list-style-type: none;
+    list-style: none;
     padding-left: 0;
   }
 
   li {
-    margin-bottom: 12px;
-  }
-
-  strong {
-    font-weight: 700;
+    margin-bottom: 14px;
   }
 
   .divider {
     height: 1px;
-    background-color: #D63384;
-    opacity: 0.2;
-    margin: 50px 0;
+    background-color: var(--green);
+    opacity: 0.15;
+    margin: 60px 0;
   }
 
   a {
-    color: #D63384;
+    color: var(--green);
     text-decoration: none;
-    border-bottom: 1px solid rgba(214, 51, 132, 0.4);
+    border-bottom: 1px solid rgba(31, 61, 43, 0.4);
   }
 
   a:hover {
     opacity: 0.7;
   }
 
-.recent-work {
-  background-color: rgba(214, 51, 132, 0.06);
-  padding: 30px;
-  border-left: 3px solid #D63384;
-  margin-top: 30px;
-}
+  .recent-work {
+    background-color: rgba(31, 61, 43, 0.05);
+    padding: 30px;
+    border-left: 3px solid var(--green);
+    margin-top: 20px;
+  }
 
-.recent-work li {
-  margin-bottom: 16px;
-}
+  .recent-work li {
+    margin-bottom: 18px;
+  }
 
-  
 </style>
 </head>
 
 <body>
 
-<h1>Ann Raiho, Ph.D.</h1>
+<div class="hero">
+  <h1>Ann Raiho, Ph.D.</h1>
 
-<p class="subtle">
-Principal, Raiho Consulting · Data & Modeling Lead
-</p>
+  <p class="subtle">
+  Independent Scientific Consultant · Modeling, Carbon, and Applied Data Systems
+  </p>
 
-<p>
-I design and deliver rigorous data systems for high-stakes decisions.
-From messy inputs to defensible outputs —> fast.
-</p>
+  <div class="signal"></div>
+
+  <p>
+  I help organizations make defensible decisions when data, models, and funding intersect.
+  From ambiguous ideas to clear technical justification — fast.
+  </p>
+</div>
 
 <div class="divider"></div>
 
-<h2>What I Deliver</h2>
+<h2>Who I Work With</h2>
 
 <ul>
-  <li><strong>Model validation & uncertainty audits</strong> → Clear risk framing and defensible results</li>
-  <li><strong>End-to-end ML pipelines</strong> → Research to production deployment</li>
-  <li><strong>Technical due diligence</strong> → Independent evaluation before capital or launch</li>
-  <li><strong>Scientific system design</strong> → Scalable, versioned, reproducible infrastructure</li>
+  <li><strong>Carbon market teams & registries</strong> → Technical vetting, methodology review, uncertainty framing, and model validation for nature-based solutions.</li>
+  <li><strong>Academic & nonprofit leads with funded projects</strong> → Targeted modeling, forecasting, study design, literature synthesis, and first-version technical builds.</li>
+  <li><strong>Domain experts with complex data problems</strong> → Cross-disciplinary data wrangling, computational analysis, and scalable system design.</li>
 </ul>
 
 <div class="divider"></div>
 
-<h2>Recent Work</h2>
+<h2>Selected Engagements</h2>
 
 <div class="recent-work">
   <ul>
-    <li>Integrated new disturbance module into a large-scale environmental model on a 3-month delivery schedule.</li>
-    <li>Advised on methodology eligibility and risk exposure for a multi-million-dollar environmental asset transaction.</li>
-    <li>Built operational ML and reporting systems across tens of thousands of acres; reduced manual reporting by 50%.</li>
-    <li>Led PhD-level technical teams delivering production-grade analytical systems.</li>
+    <li><strong>[Carbon Risk Review]</strong> Evaluated methodology eligibility and model risk exposure for a multi-million-dollar environmental asset transaction.</li>
+    <li><strong>[Model Deployment]</strong> Integrated new disturbance modules into a large-scale environmental forecasting system under a 3-month delivery timeline.</li>
+    <li><strong>[Operational Systems]</strong> Built production ML and reporting pipelines across tens of thousands of acres; reduced manual reporting by 50%.</li>
+    <li><strong>[Technical Leadership]</strong> Directed PhD-level teams delivering versioned, production-grade analytical systems.</li>
   </ul>
 </div>
-
 
 <div class="divider"></div>
 
 <h2>Core Capabilities</h2>
 
 <ul>
-  <li>Machine learning & statistical modeling</li>
-  <li>Uncertainty quantification & validation</li>
-  <li>Geospatial & high-dimensional data systems</li>
-  <li>Python, R, SQL, C++, cloud infrastructure</li>
+  <li>Carbon forecasting & ecological modeling</li>
+  <li>Uncertainty quantification & defensible reporting</li>
+  <li>Technical due diligence & methodology evaluation</li>
+  <li>Machine learning, Python/R/C++, cloud infrastructure</li>
 </ul>
 
 <div class="divider"></div>
 
-<h2>Contact</h2>
+<h2>Work With Me</h2>
 
 <p>
-Email: <a href="mailto:ann@raihoconsulting.com">ann@raihoconsulting.com</a><br>
-LinkedIn: <a href="https://www.linkedin.com/in/ann-raiho-20b7ba1b9/" target="_blank">ann-raiho</a>
+If you need rigorous technical work delivered clearly and on schedule,
+email <a href="mailto:ann@raihoconsulting.com">ann@raihoconsulting.com</a>.
+</p>
+
+<p>
+Typical engagements range from focused 2–4 week technical reviews to multi-month modeling builds.
 </p>
 
 </body>
