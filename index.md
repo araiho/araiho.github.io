@@ -56,3 +56,12 @@ I provide independent quantitative evaluation of environmental and carbon system
 Email: [ann@raihoconsulting.com](mailto:ann@raihoconsulting.com)  
 LinkedIn: [ann-raiho](https://www.linkedin.com/in/ann-raiho-20b7ba1b9/)
 
+
+---
+
+## Interactive Demos
+
+Tree-by-tree climate forecasts — *Predictive Canopy Intelligence*:
+
+- **[Philadelphia Tree Map](/philadelphia-tree-map/)** — all ~142,000 street trees scored for 2050 climate and pest risk, with diversity-aware planting recommendations and the dollar value at stake.
+- **[Steamboat Springs Tree Map](/steamboat-tree-map/)** — downtown trees mapped from satellite with *no inventory*, with per-tree aspen drought vulnerability fused from a terrain model and an observed Sentinel-2 decline signal.
