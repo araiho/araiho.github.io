@@ -158,6 +158,29 @@ a:hover {
   margin-bottom: 0;
 }
 
+/* Canopy Intelligence wordmark */
+.ci-lockup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ci-lockup h1 {
+  margin: 0;
+}
+
+.ci-mark {
+  display: inline-block;
+  flex: none;
+  vertical-align: middle;
+}
+
+/* small inline mark used in the homepage section heading */
+h2 .ci-mark {
+  margin-right: 9px;
+  vertical-align: -4px;
+}
+
 /* Call-to-action button */
 .btn {
   display: inline-block;
