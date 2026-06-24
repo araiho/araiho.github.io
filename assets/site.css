@@ -1,0 +1,166 @@
+/* Shared styles for raihoconsulting.com — palette + type used across
+   the homepage, the Canopy Intelligence page, and the booking page. */
+
+:root {
+  --tan: #F2E9DD;
+  --pink: #D63384;
+  --green: #1F3D2B;
+}
+
+body {
+  background-color: var(--tan);
+  color: var(--pink);
+  font-family: 'Space Mono', monospace;
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: 1.7;
+  padding: 0 20px 80px 20px;
+}
+
+h1, h2 {
+  font-family: 'Inter', sans-serif;
+  color: var(--green);
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  color: var(--green);
+  font-size: 1.05rem;
+  margin-bottom: 0.4em;
+}
+
+.subtle {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-bottom: 30px;
+  color: var(--green);
+}
+
+.signal {
+  height: 4px;
+  width: 60px;
+  background: var(--pink);
+  margin: 30px 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 14px;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--green);
+  opacity: 0.15;
+  margin: 60px 0;
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(31, 61, 43, 0.4);
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.currently {
+  font-size: 0.85rem;
+  color: var(--green);
+  opacity: 0.7;
+  margin-top: 0;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 18px;
+  font-size: 0.85rem;
+}
+
+/* Minimal text nav under the hero */
+.nav {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.nav a {
+  border-bottom: none;
+  margin-right: 6px;
+}
+
+.nav .sep {
+  opacity: 0.4;
+  margin-right: 6px;
+}
+
+/* Entry-point / highlight card — same look as the homepage recent-work block */
+.entry {
+  background-color: rgba(31, 61, 43, 0.05);
+  padding: 26px 30px;
+  border-left: 3px solid var(--green);
+  margin-bottom: 24px;
+}
+
+.entry h3 {
+  margin-top: 0;
+}
+
+.entry .who {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--pink);
+  margin-bottom: 6px;
+}
+
+.entry .links {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+/* Call-to-action button */
+.btn {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: var(--green);
+  color: var(--tan);
+  padding: 12px 22px;
+  border-bottom: none;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  background: var(--pink);
+  opacity: 1;
+}

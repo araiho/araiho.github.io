@@ -7,29 +7,14 @@
 <title>Ann Raiho, Ph.D.</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
 
 <style>
-  :root {
-    --tan: #F2E9DD;
-    --pink: #D63384;
-    --green: #1F3D2B;
-  }
-
-  body {
-    background-color: var(--tan);
-    color: var(--pink);
-    font-family: 'Space Mono', monospace;
-    max-width: 760px;
-    margin: 0 auto;
-    line-height: 1.7;
-    padding: 0 20px 80px 20px;
-  }
-
-  /* HERO SECTION WITH FOREST BACKGROUND */
+  /* Page-specific: hero + recent-work block */
   .hero {
     position: relative;
-    padding: 120px 0 80px 0;
-    margin-bottom: 40px;
+    padding: 120px 0 70px 0;
+    margin-bottom: 30px;
   }
 
   .hero::before {
@@ -60,68 +45,12 @@
     z-index: -1;
   }
 
-  h1, h2 {
-    font-family: 'Inter', sans-serif;
-    color: var(--green);
-  }
-
-  h1 {
-    font-size: 2.6rem;
-    font-weight: 700;
-    margin-bottom: 0.3em;
-    letter-spacing: -1px;
-  }
-
-  h2 {
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 60px;
-    margin-bottom: 20px;
-  }
-
-  .subtle {
-    font-size: 0.9rem;
-    opacity: 0.75;
-    margin-bottom: 30px;
-    color: var(--green);
-  }
-
-  .signal {
-    height: 4px;
-    width: 60px;
-    background: var(--pink);
-    margin: 30px 0;
-  }
-
-  p {
-    margin-bottom: 20px;
-  }
-
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  li {
-    margin-bottom: 14px;
-  }
-
-  .divider {
-    height: 1px;
-    background-color: var(--green);
-    opacity: 0.15;
-    margin: 60px 0;
-  }
-
-  a {
-    color: var(--green);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(31, 61, 43, 0.4);
-  }
-
-  a:hover {
-    opacity: 0.7;
+  .headshot {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
   }
 
   .recent-work {
@@ -134,31 +63,6 @@
   .recent-work li {
     margin-bottom: 18px;
   }
-
-  .headshot {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 24px;
-  }
-
-  .currently {
-    font-size: 0.85rem;
-    color: var(--green);
-    opacity: 0.7;
-    margin-top: 0;
-  }
-
-  .social-links {
-    margin-top: 20px;
-  }
-
-  .social-links a {
-    margin-right: 18px;
-    font-size: 0.85rem;
-  }
-
 </style>
 </head>
 
@@ -181,16 +85,32 @@
   <p class="currently">
   Adjunct Research Assistant Professor, Temple · First author in <a href="https://doi.org/10.1126/science.abk3126"><i>Science</i></a> · Philly city lead for <a href="https://www.outinclimate.com/">Out in Climate</a> · Fully embracing AI · <a href="https://www.natalie-warren.com/hudson-bay-bound-book">Paddler</a>
   </p>
+
+  <p class="nav">
+    <a href="/canopy-intelligence/">Canopy Intelligence</a> <span class="sep">·</span> <a href="/book/">Work with me</a>
+  </p>
 </div>
+
+<div class="divider"></div>
+
+<h2>Canopy Intelligence</h2>
+
+<p>
+Tree-by-tree, satellite-derived intelligence for the people who steward forests and urban canopy — <strong>cities, land trusts, and arborists</strong>. I turn open satellite imagery and ecological models into per-tree and per-parcel decisions: what your canopy is worth, which trees are at risk, what to plant, and where the rules bite.
+</p>
+
+<p>
+<a class="btn" href="/canopy-intelligence/">See where to start &rarr;</a>
+</p>
 
 <div class="divider"></div>
 
 <h2>Who I Work With</h2>
 
 <ul>
-  <li><strong>Carbon market teams & registries</strong> → Technical vetting, methodology review, uncertainty framing, and model validation for nature-based solutions.</li>
+  <li><strong>Cities & urban forest managers</strong> → Satellite tree inventories with no ground survey, wildfire-code compliance, canopy & heat-equity mapping, and replacement planning.</li>
+  <li><strong>Land trusts & carbon teams</strong> → Easement and harvest monitoring, methodology review, uncertainty framing, and model validation — defensible and reproducible.</li>
   <li><strong>Academic & nonprofit leads with funded projects</strong> → Targeted modeling, forecasting, study design, literature synthesis, and first-version technical builds.</li>
-  <li><strong>Domain experts with complex data problems</strong> → Cross-disciplinary data wrangling, computational analysis, and scalable system design.</li>
 </ul>
 
 <div class="divider"></div>
@@ -219,27 +139,18 @@
 
 <div class="divider"></div>
 
-<h2>Interactive Demos</h2>
-
-<p>
-Tree-by-tree climate forecasts I built &mdash; <em>Predictive Canopy Intelligence</em>:
-</p>
-
-<ul>
-  <li><strong><a href="/philadelphia-tree-map/">Philadelphia Tree Map</a></strong> &mdash; all ~142,000 street trees scored for 2050 climate and pest risk, with diversity-aware planting recommendations and the dollar value at stake.</li>
-  <li><strong><a href="/steamboat-tree-map/">Steamboat Springs Tree Map</a></strong> &mdash; downtown trees mapped from satellite with no inventory; per-tree aspen drought vulnerability fused from a terrain model and an observed Sentinel-2 decline signal.</li>
-</ul>
-
-<div class="divider"></div>
-
 <h2>Work With Me</h2>
 
 <p>
-Email <a href="mailto:ann@raihoconsulting.com">ann@raihoconsulting.com</a> and I'll set up a 30-minute call. I'll understand your problem and come back with a proposal — no vague discovery phase.
+Tell me about your project and grab a 30-minute call. I'll understand your problem and come back with a proposal — no vague discovery phase.
 </p>
 
 <p>
-Typical engagements range from focused 2–4 week technical reviews to multi-month modeling builds.
+<a class="btn" href="/book/">Book a 30-min call &rarr;</a>
+</p>
+
+<p class="currently">
+Prefer email? <a href="mailto:ann@raihoconsulting.com">ann@raihoconsulting.com</a>. Typical engagements range from focused 2–4 week technical reviews to multi-month modeling builds.
 </p>
 
 <div class="social-links">
