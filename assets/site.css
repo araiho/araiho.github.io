@@ -142,6 +142,17 @@ a:hover {
   margin-bottom: 6px;
 }
 
+.entry .deliverable {
+  font-size: 0.82rem;
+  color: var(--green);
+  margin-bottom: 14px;
+}
+
+.entry .deliverable strong {
+  color: var(--pink);
+  letter-spacing: 0.5px;
+}
+
 .entry .links {
   font-size: 0.85rem;
   margin-bottom: 0;
