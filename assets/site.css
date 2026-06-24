@@ -198,3 +198,43 @@ h2 .ci-mark {
   background: var(--pink);
   opacity: 1;
 }
+
+/* Lead-capture form — "get the 1-page brief" */
+.lead-form {
+  margin-top: 8px;
+}
+
+.lead-form label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--green);
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+.lead-form input,
+.lead-form select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--green);
+  background: var(--tan);
+  border: 1px solid rgba(31, 61, 43, 0.4);
+  padding: 11px 12px;
+}
+
+.lead-form input:focus,
+.lead-form select:focus {
+  outline: none;
+  border-color: var(--pink);
+}
+
+.lead-form button {
+  margin-top: 22px;
+  cursor: pointer;
+  border: none;
+}
